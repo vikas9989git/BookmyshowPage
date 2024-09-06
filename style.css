@@ -1,0 +1,81 @@
+.popup ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly
+}
+.bt{
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+.movie-items{
+    list-style: none;
+    display: flex;
+}
+.movie-name{
+    font-size: 1.8rem;
+}
+.movie-items li{
+    text-align: center;
+    margin-left: 15px;
+    font-size: 1rem;
+}
+.active, .bt:hover {
+    background-color: red;
+    color: aliceblue;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.container1{
+    display: flex;
+    justify-content: space-evenly;
+}
+p,h6{
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+.select-ticketsbtn{
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: auto;
+}  
+.popup{
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media only screen and (max-width: 450px){
+    #popup{
+        width:80%;
+        
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width:451px) and (max-width: 767px){
+    #popup{
+        width:60%;
+        
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width:768px) and (max-width: 1280px) {
+    #popup{
+        width:50%;
+        
+    }
+}
+@media only screen and (min-width: 1281px) {
+    #popup{
+        width:40%;
+        
+    }
+}
